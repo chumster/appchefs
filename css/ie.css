@@ -1,0 +1,33 @@
+/* CSS INFORMATION
+	- Project: Media Star
+	- Author: FelixPlus - www.felixplus.com
+	- Last Update: 22/03/2013
+*/
+
+#sidebar .widget_tag_cloud .tagcloud a,
+.entry-box .widget_tag_cloud .tagcloud a,
+.flx-dropcap.flx-color,
+.flx-dropcap.flx-cricle,
+.flx-service-4 li span i,
+.flex-control-paging li a,
+.testimonial-slider .slides a.testimonial-avatar,
+.testimonial-slider .slides img {
+	behavior: url(js/PIE.htc);
+}
+
+.flickr-badge-image {
+	width:70px;
+}
+.iview-caption.caption2,
+.iview-caption.caption3 {
+	width:500px !important;
+}
+.widget_search #searchform #s {
+	height:32px;
+	line-height:32px;
+}
+.blog-style-2 .post-item .mejs-video img {
+	width:250px !important;
+	height:250px !important;
+}
+

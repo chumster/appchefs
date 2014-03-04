@@ -1,0 +1,278 @@
+/*
+Theme created for use with Sequence.js (http://www.sequencejs.com/)
+
+Theme:   Sliding Horizontal Parallax (Responsive)
+Version:   0.2.2 Beta
+Theme Author:   Ian Lunn @IanLunn
+Author URL:   http://www.ianlunn.co.uk/
+Theme URL:   http://www.sequencejs.com/themes/sliding-horizontal-parallax/
+
+This is a FREE theme and is dual licensed under the following: 
+http://www.opensource.org/licenses/mit-license.php | http://www.gnu.org/licenses/gpl.html
+
+Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise stated.
+Aside from these comments, you may modify and distribute this file as you please. Have fun!
+ */
+#sequence-slider {
+	height: 380px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	max-width: 1280px;
+	width: 100%;
+}
+
+#main, #aside{
+	font-size: 1.6em;
+}
+
+a{
+	color: white;
+}
+
+#sequence-slider .next, #sequence-slider .prev {
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-weight: bold;
+	padding: 10px 15px;
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+	height: 75px;
+	margin-top: -47.5px;
+}
+
+.pause {
+	bottom: 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1000;
+}
+
+.paused {
+	opacity: 0.3;
+}
+
+#sequence-slider .prev {
+	left: 3%;
+}
+
+#sequence-slider .next {
+	right: 3%;
+}
+
+.prev img, .next img{
+	height: 100%;
+	width: auto;
+}
+
+#sequence-preloader{
+	background: #d9d9d9;
+}
+
+#nav {
+	bottom:0px;
+	display: none;
+	right: 15px;
+	position: absolute;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+#nav li {
+	display: inline-block;
+	height: 65px;
+	border:2px solid #e3ecf0;
+}
+
+#nav li img {
+	cursor: pointer;
+	opacity: 0.5;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#nav li img.active {
+	opacity: 1;
+}
+
+@media only screen and (min-width : 1224px) {
+	/*only display the hover effect on desktops/laptops*/
+	#nav li img:hover {
+		opacity: 1;
+	
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		-ms-transition-duration: 1s;
+		transition-duration: 1s;
+	}
+
+}
+
+#sequence li{
+	height: 100%;
+	position: absolute;
+	top: -85px;
+	width: 100%;
+}
+
+#sequence li * {
+	position: absolute;
+}
+
+#sequence li img{
+	height: 96%;
+}
+
+#sequence {
+	display: block;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	max-width: 1280px;
+	width: 100%;
+	
+	/*backface-visibility prevents graphical glitches when frames are animating*/
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+h2 {
+	color: white;
+	font-family: 'Sirin Stencil', serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Ruluko', serif;
+}
+
+#sequence-slider .next, #sequence-slider .prev {
+	position: absolute;
+	opacity: 0.6;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#sequence-slider .next:hover, #sequence-slider .prev:hover {
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.title {
+	font-size: 3.4em;
+	left: 65%;
+	width: 35%;
+	opacity: 0;
+	bottom: 1%;
+	z-index: 50;
+}
+
+.animate-in .title {
+	left: 50%;
+	opacity: 1;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.animate-out .title {
+	left: 35%;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.subtitle {
+	color: black;
+	font-size: 2em;
+	left: 35%;
+	width: 35%;
+	opacity: 0;
+	top: 101%;
+}
+
+.animate-in .subtitle {
+	left: 50%;
+	opacity: 1;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.animate-out .subtitle {
+	left: 65%;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.model {
+	left:  15px;
+	bottom: 0%;
+	opacity: 0;
+	position: relative;
+	height: auto !important;
+	max-height: 568px !important;
+	width:430px;
+}
+
+.animate-in .model {
+	left: 15px;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.animate-out .model {
+	left: 15px;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
